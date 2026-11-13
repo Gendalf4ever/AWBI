@@ -17,7 +17,7 @@ def get_db():
         
 class Location(Base):
     __tablename__= "locations"
-    id = Column(Integer, primaryKey=True, index=True)
+    id = Column(Integer, primary_key=True, index=True)
     name = Column(String(50), unique=True, nullable=False)
     code = Column(String(20), unique=True, nullable=False)
     
@@ -73,7 +73,7 @@ class Transaction(Base):
 
     # revenue   
     rev_aw = Column(Numeric(10, 2), default = 0)
-    rew_lounge = Column(Numeric(10, 2), default=0)
+    rev_lounge = Column(Numeric(10, 2), default=0)
     rev_single =  Column(Numeric(10, 2), default=0)
     rev_ps5 = Column(Numeric(10, 2), default = 0)
     rev_autosim = Column(Numeric(10, 2), default=0)
