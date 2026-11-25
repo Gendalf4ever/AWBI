@@ -8,6 +8,7 @@ class Token(BaseModel):
     location_name: str | None = None
 
 class ShiftOpen(BaseModel):
+    location_id: int
     start_cash: float = Field(default=0, ge=0)
 
 class ShiftClose(BaseModel):

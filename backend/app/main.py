@@ -23,7 +23,7 @@ async def lifespan(app: FastAPI):
                 User(username="master", full_name="Руководитель", password_hash=get_password_hash("1234"), role="master", location_id=None),
                 User(username="pik", full_name="Оператор Пик", password_hash=get_password_hash("1234"), role="operator", location_id=locs[0].id),
                 User(username="prometey", full_name="Оператор Прометей", password_hash=get_password_hash("1234"), role="operator", location_id=locs[1].id),
-                User(username="iyun", full_name="Оператор Июнь", password_hash=get_password_hash("1234"), role="operator", location_id=locs[2].id),
+                User(username="malina-moll", full_name="Оператор Малина Молл", password_hash=get_password_hash("1234"), role="operator", location_id=locs[2].id),
             ]
             db.add_all(users)
             db.commit()
